@@ -1,0 +1,6 @@
+{
+  "name": "Mistwood Manor Mussoorie",
+  "description": "Official booking engine and luxury boutique hotel experience in Happy Valley, Mussoorie. 18 Super Deluxe Rooms, in-house Rezzala dining, and direct mountain getaway reservation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
