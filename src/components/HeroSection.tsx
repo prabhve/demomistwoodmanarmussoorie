@@ -64,15 +64,38 @@ export const HeroSection = ({ onQuickBook }: HeroSectionProps) => {
 
   return (
     <section className="relative min-h-[90vh] lg:min-h-[85vh] flex flex-col justify-center overflow-hidden pt-6 pb-16 bg-slate-950">
-      {/* Background with Ambient Mountain Overlays */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroInfo?.bgImage || "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=85"}
-          alt="Mussoorie Himalayan Mountain Peaks and Valley"
-          className="w-full h-full object-cover object-center opacity-30 filter brightness-75 scale-105 transform animate-pulse-glow"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f17] via-[#0b0f17]/75 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0b0f17] via-[#0b0f17]/60 to-transparent" />
+      {/* Background with Panoramic Himalayan Multi-Layer Animation Theme */}
+      <div className="absolute inset-0 z-0 overflow-hidden select-none pointer-events-none">
+        {/* Layer 1: Himalayan Mountain Range Photo with Ken Burns Slow Pan & Zoom */}
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src={heroInfo?.bgImage || "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=2400&q=90"}
+            alt="Majestic Mussoorie Garhwal Himalayan Snow Peaks and Valley"
+            className="w-full h-full object-cover object-center filter brightness-[0.72] contrast-[1.08] saturate-[1.1] animate-himalayan-zoom will-change-transform scale-105"
+          />
+        </div>
+
+        {/* Layer 2: Mountain Ridge Golden Alpenglow Warmth (Sunrise/Sunset Himalayan Ray) */}
+        <div className="absolute -top-20 right-0 w-full md:w-3/4 h-3/4 bg-gradient-to-bl from-amber-500/20 via-orange-600/10 to-transparent blur-3xl animate-alpenglow pointer-events-none" />
+
+        {/* Layer 3: High-Altitude Floating Himalayan Mist Streamers (Left-to-Right drift) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-100/10 to-transparent blur-2xl animate-mist-1 pointer-events-none" />
+
+        {/* Layer 4: Lower Valley Cloud Drift (Right-to-Left drift) */}
+        <div className="absolute bottom-10 inset-x-0 h-56 bg-gradient-to-t from-slate-950/60 via-amber-200/5 to-transparent blur-xl animate-mist-2 pointer-events-none" />
+
+        {/* Layer 5: Ethereal Floating Alpine Starlight & Mountain Air Particles */}
+        <div className="absolute inset-0 pointer-events-none opacity-60">
+          <div className="absolute top-1/4 left-[15%] w-1.5 h-1.5 rounded-full bg-amber-200/70 blur-[0.5px] animate-[float-dust_14s_ease-in-out_infinite]" />
+          <div className="absolute top-1/3 left-[48%] w-1 h-1 rounded-full bg-white/80 blur-[0.5px] animate-[float-dust_18s_ease-in-out_infinite_2s]" />
+          <div className="absolute top-1/2 right-[20%] w-1.5 h-1.5 rounded-full bg-amber-300/60 blur-[0.5px] animate-[float-dust_16s_ease-in-out_infinite_4s]" />
+          <div className="absolute top-2/3 left-[28%] w-1 h-1 rounded-full bg-cyan-200/70 blur-[0.5px] animate-[float-dust_20s_ease-in-out_infinite_1s]" />
+          <div className="absolute top-[22%] right-[32%] w-2 h-2 rounded-full bg-amber-100/50 blur-[1px] animate-[float-dust_22s_ease-in-out_infinite_6s]" />
+        </div>
+
+        {/* Layer 6: Deep Contrast Shadow Overlays for Crisp Text Legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f17] via-[#0b0f17]/70 to-[#0b0f17]/35" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0b0f17]/95 via-[#0b0f17]/60 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-4">

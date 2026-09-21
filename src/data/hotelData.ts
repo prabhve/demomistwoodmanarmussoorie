@@ -311,7 +311,7 @@ export const HERO_INFO: HeroContent = {
   badgeText: 'Exclusive Mountain Sanctuary • Happy Valley, Mussoorie',
   mainHeading: 'Mistwood Manor Mussoorie',
   subHeading: 'Experience peaceful mountain luxury nestled in scenic Happy Valley with 18 Super Deluxe Rooms, in-house Rezzala multicuisine dining, and panoramic Himalayan serenity.',
-  bgImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=85',
+  bgImage: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=2400&q=90',
   chip1: '4.8/5 Rated • 100m to Buddha Temple & Dalai Hills',
   chip2: '18 Super Deluxe Rooms • 24x7 Hot Spring Water',
   chip3: 'In-House Rezzala Multicuisine Restaurant',

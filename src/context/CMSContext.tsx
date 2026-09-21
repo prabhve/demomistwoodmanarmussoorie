@@ -72,7 +72,7 @@ export interface CMSData {
   videoUrl: string;
 }
 
-const CMS_STORAGE_KEY = 'mistwood_manor_full_cms_v3';
+const CMS_STORAGE_KEY = 'mistwood_manor_full_cms_v4';
 
 const initialHotelInfo: HotelInfoData = {
   ...DEFAULT_HOTEL_INFO,
