@@ -86,16 +86,16 @@ export const Navbar = ({ onOpenBooking }: NavbarProps) => {
       >
         <div className="max-w-7xl mx-auto px-2.5 sm:px-5 lg:px-6 flex items-center justify-between gap-2 sm:gap-4 min-w-0">
           {/* Logo & Emblem */}
-          <a href="#" className="flex items-center gap-2 sm:gap-3 group min-w-0 shrink">
+          <a href="#" className="flex items-center gap-2 sm:gap-3 group shrink-0">
             <div className="w-7 h-7 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-full border border-amber-500/80 bg-gradient-to-br from-amber-600 to-amber-900 flex items-center justify-center text-white font-serif font-bold text-xs sm:text-base shadow-md shadow-amber-950/50 group-hover:scale-105 transition-transform shrink-0">
               <span className="tracking-tighter">M<span className="text-amber-300 text-[8.5px] sm:text-xs">M</span></span>
             </div>
-            <div className="flex flex-col min-w-0">
-              <span className="text-xs sm:text-base lg:text-lg font-serif font-bold tracking-tight text-white group-hover:text-amber-300 transition-colors leading-tight truncate">
-                {hotelInfo.name.toUpperCase()}
+            <div className="flex flex-col">
+              <span className="text-xs sm:text-base lg:text-lg font-serif font-bold tracking-tight text-white group-hover:text-amber-300 transition-colors leading-tight whitespace-nowrap">
+                MISTWOOD MANOR
               </span>
-              <span className="text-[7.5px] sm:text-[9.5px] font-sans tracking-[0.12em] sm:tracking-[0.18em] uppercase text-amber-400/90 font-medium leading-none mt-0.5 truncate">
-                {hotelInfo.locationArea} • Mussoorie
+              <span className="text-[7.5px] sm:text-[9.5px] font-sans tracking-[0.14em] sm:tracking-[0.18em] uppercase text-amber-400/90 font-medium leading-none mt-0.5 whitespace-nowrap">
+                {hotelInfo.locationArea || 'HAPPY VALLEY'} • MUSSOORIE
               </span>
             </div>
           </a>
